@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Datos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-margin">
+  <ion-row>
+
+    <ion-col> Distancia</ion-col>
+    <ion-col>LDR (Fotoresistencia)</ion-col>
+    <ion-col>Tiempo</ion-col>
+  
+  </ion-row>
+  <ion-row *ngFor="let sensor of sensores">
+    <ion-col>{{ sensor.distancia }}</ion-col>
+    <ion-col>{{ sensor.ldr }}</ion-col>
+    <ion-col>{{ sensor.time }}</ion-col>
+  </ion-row>
+</ion-grid>
+ 
+
+
+  
+</ion-content>
